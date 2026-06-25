@@ -4,12 +4,14 @@ spec.md
 spec.html
 spec_pdf.html
 *.pyc
+__pycache__/
 specification/version.md
 .vscode/*
 model_graph.dot
 model_graph.png
 model-*.json
 specification/requirements_model/build/*
+specification/requirements_model/extraction/output/
 .markdownlint-cli2.jsonc
 
 # AI tool local settings

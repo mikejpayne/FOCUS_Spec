@@ -1,6 +1,22 @@
 {
   "DatasetTypes": {
-    "BillingPeriod": "BIP"
+    "CostAndUsage": "CAU",
+    "BillingPeriod": "BIP",
+    "ContractCommitment": "CCT",
+    "InvoiceDetail": "IND"
+  },
+  "FeatureLevelMap": {
+    "Mandatory": "M",
+    "Conditional": "C",
+    "Recommended": "O",
+    "Optional": "O"
+  },
+  "RequirementVerbs": {
+    "include": "ColumnPresence",
+    "conform to": "AttributeConformance",
+    "adhere to": "Composite",
+    "represent": "Unclassified",
+    "reflect": "Unclassified"
   },
   "DataModel": {
     "Location": "specification/datasets/data_model.md",
@@ -8,7 +24,9 @@
     "ArtifactType": "M",
     "Headings": {
       "Requirements": "Requirements",
-      "Id": "Data Model ID"
+      "Id": "Data Model ID",
+      "DisplayName": "Display Name",
+      "VersionIntroduced": "Version Introduced"
     }
   },
   "Datasets": {
@@ -17,16 +35,10 @@
     "ArtifactType": "D",
     "Headings": {
       "Requirements": "Requirements",
-      "Id": "Dataset ID"
-    }
-  },
-  "Columns": {
-    "Location": "specification/datasets/<dataset_name>/",
-    "EntityType": "Column",
-    "ArtifactType": "C",
-    "Headings": {
-      "Requirements": "Requirements",
-      "Id": "Column ID"
+      "Id": "Dataset ID",
+      "DisplayName": "Display Name",
+      "ContentConstraints": "Content Constraints",
+      "VersionIntroduced": "Version Introduced"
     }
   }
 }
