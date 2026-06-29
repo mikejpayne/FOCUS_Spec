@@ -12,9 +12,16 @@ def write_rules(rules, output_dir, target, logger):
 
     if target.entity_type == "DataModel":
         out_path = output_dir / "datamodel.json"
+    elif target.entity_type == "Column":
+        folder = id_to_folder(target.dataset_id)
+        col_name = target.filepath.stem
+        out_path = output_dir / "datasets" / folder / "columns" / f"{col_name}.json"
     elif target.entity_type == "Dataset":
         folder = id_to_folder(target.dataset_id)
         out_path = output_dir / "datasets" / folder / f"{target.dataset_id.lower()}.json"
+    elif target.entity_type == "Attribute":
+        attr_name = target.filepath.stem
+        out_path = output_dir / "attributes" / f"{attr_name}.json"
     else:
         out_path = output_dir / f"{target.entity_type.lower()}.json"
 

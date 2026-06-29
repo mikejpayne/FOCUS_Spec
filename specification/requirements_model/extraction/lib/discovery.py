@@ -49,6 +49,39 @@ def discover_files(contract, spec_root, logger):
             ))
             logger.info(f"Discovered Dataset: {dataset_md} ({dataset_prefix})")
 
+            # 3. Columns within this dataset
+            col_config = contract.get("Columns", {})
+            columns_dir = subdir / "columns"
+            if columns_dir.exists():
+                for col_file in sorted(columns_dir.glob("*.md")):
+                    targets.append(FileTarget(
+                        filepath=col_file,
+                        entity_type=col_config["EntityType"],
+                        artifact_type=col_config["ArtifactType"],
+                        dataset_id=dataset_id,
+                        dataset_name=id_to_display_name(dataset_id),
+                        dataset_prefix=dataset_prefix,
+                        headings=col_config["Headings"],
+                    ))
+                logger.info(f"Discovered {len(list(columns_dir.glob('*.md')))} columns in {subdir.name}")
+
+    # 4. Attributes
+    attr_config = contract.get("Attributes", {})
+    if attr_config:
+        attr_base = spec_root / attr_config["Location"]
+        if attr_base.exists():
+            skip = {"attributes_overview.md"}
+            for attr_file in sorted(attr_base.glob("*.md")):
+                if attr_file.name in skip:
+                    continue
+                targets.append(FileTarget(
+                    filepath=attr_file,
+                    entity_type=attr_config["EntityType"],
+                    artifact_type=attr_config["ArtifactType"],
+                    headings=attr_config["Headings"],
+                ))
+            logger.info(f"Discovered {len([f for f in attr_base.glob('*.md') if f.name not in skip])} attributes")
+
     logger.info(f"Total files discovered: {len(targets)}")
     return targets
 

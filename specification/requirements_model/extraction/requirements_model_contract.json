@@ -12,7 +12,7 @@
     "Optional": "O"
   },
   "RequirementVerbs": {
-    "include": "ColumnPresence",
+    "include": "Presence",
     "conform to": "AttributeConformance",
     "adhere to": "Composite",
     "represent": "Unclassified",
@@ -38,6 +38,28 @@
       "Id": "Dataset ID",
       "DisplayName": "Display Name",
       "ContentConstraints": "Content Constraints",
+      "VersionIntroduced": "Version Introduced"
+    }
+  },
+  "Columns": {
+    "EntityType": "Column",
+    "ArtifactType": "C",
+    "Headings": {
+      "Requirements": "Requirements",
+      "Id": "Column ID",
+      "DisplayName": "Display Name",
+      "ContentConstraints": "Content Constraints",
+      "VersionIntroduced": "Version Introduced"
+    }
+  },
+  "Attributes": {
+    "Location": "specification/attributes/",
+    "EntityType": "Attribute",
+    "ArtifactType": "A",
+    "Headings": {
+      "Requirements": "Requirements",
+      "Id": "Attribute ID",
+      "DisplayName": "Attribute Name",
       "VersionIntroduced": "Version Introduced"
     }
   }

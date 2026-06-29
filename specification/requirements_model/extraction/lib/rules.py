@@ -45,10 +45,26 @@ def classify_verb(text, verb_map):
 INCLUDE_COLUMN_RE = re.compile(r"\binclude\s+([A-Z][a-zA-Z]+)\b")
 CONFORM_ATTR_RE = re.compile(r"\bconform to\s+([A-Z][a-zA-Z]+)\s+requirements\b")
 
+# Patterns for classifying column/attribute requirement bullets
+TYPE_RE = re.compile(r"\bbe of type\b", re.IGNORECASE)
+NULL_RE = re.compile(r"\bbe null\b", re.IGNORECASE)
+FORMAT_RE = re.compile(r"\bconform to\b", re.IGNORECASE)
+
+
+def classify_column_bullet(text):
+    """Classify a column or attribute requirement bullet into a Function value."""
+    if TYPE_RE.search(text):
+        return "Type"
+    if NULL_RE.search(text):
+        return "Nullability"
+    if FORMAT_RE.search(text):
+        return "Format"
+    return "Validation"
+
 
 def extract_requirement_check(text, function):
     """Extract a structured check from the requirement text, if the pattern is clean."""
-    if function == "ColumnPresence":
+    if function == "Presence":
         m = INCLUDE_COLUMN_RE.search(text)
         if m:
             return {"CheckFunction": "ColumnPresent", "ColumnName": m.group(1)}
@@ -126,13 +142,18 @@ def generate_rules(target, sections, contract, model_version, logger):
     skipped = []
     seq = 0
 
+    is_column_or_attr = target.entity_type in ("Column", "Attribute")
+
     def process_bullet(bullet):
         nonlocal seq
 
-        function = classify_verb(bullet.text, verb_map)
-        if function is None:
-            skipped.append(bullet.text)
-            return None
+        if is_column_or_attr:
+            function = classify_column_bullet(bullet.text)
+        else:
+            function = classify_verb(bullet.text, verb_map)
+            if function is None:
+                skipped.append(bullet.text)
+                return None
 
         seq += 1
         keyword = extract_bcp14_keyword(bullet.text)
@@ -152,6 +173,15 @@ def generate_rules(target, sections, contract, model_version, logger):
                 "Dependencies": [],
             },
         }
+
+        # For Presence rules, EntityId/Reference point to the included entity
+        if function == "Presence":
+            m = INCLUDE_COLUMN_RE.search(bullet.text)
+            if m:
+                col_name = m.group(1)
+                rule["EntityId"] = col_name
+                rule["EntityName"] = id_to_display_name(col_name)
+                rule["Reference"] = col_name
 
         if bullet.children:
             sub_child_ids = []
