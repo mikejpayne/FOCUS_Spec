@@ -1,0 +1,142 @@
+{
+  "CCT-ContractPeriodStart-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Period Start",
+    "EntityId": "ContractPeriodStart",
+    "Reference": "ContractPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractPeriodStart MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractPeriodStart-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractPeriodStart-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractPeriodStart-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractPeriodStart-C-004-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CCT-ContractPeriodStart-C-001-M",
+        "CCT-ContractPeriodStart-C-002-M",
+        "CCT-ContractPeriodStart-C-003-M",
+        "CCT-ContractPeriodStart-C-004-M"
+      ]
+    }
+  },
+  "CCT-ContractPeriodStart-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Period Start",
+    "EntityId": "ContractPeriodStart",
+    "Reference": "ContractPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractPeriodStart MUST be of type Date/Time.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractPeriodStart-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Period Start",
+    "EntityId": "ContractPeriodStart",
+    "Reference": "ContractPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractPeriodStart MUST conform to DateTimeFormat requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractPeriodStart-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Period Start",
+    "EntityId": "ContractPeriodStart",
+    "Reference": "ContractPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractPeriodStart MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractPeriodStart-C-004-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Period Start",
+    "EntityId": "ContractPeriodStart",
+    "Reference": "ContractPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractPeriodStart MUST be the inclusive start bound of the effective period of the contract.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

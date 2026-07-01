@@ -1,0 +1,371 @@
+{
+  "IND-InvoiceDetailGrain-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-004-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-005-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-006-O"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-007-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-008-O"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-009-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-010-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-InvoiceDetailGrain-C-001-M",
+        "IND-InvoiceDetailGrain-C-002-M",
+        "IND-InvoiceDetailGrain-C-003-M",
+        "IND-InvoiceDetailGrain-C-004-C",
+        "IND-InvoiceDetailGrain-C-005-M",
+        "IND-InvoiceDetailGrain-C-006-O",
+        "IND-InvoiceDetailGrain-C-007-C",
+        "IND-InvoiceDetailGrain-C-008-O",
+        "IND-InvoiceDetailGrain-C-009-M",
+        "IND-InvoiceDetailGrain-C-010-M"
+      ]
+    }
+  },
+  "IND-InvoiceDetailGrain-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain MUST be of type JSON Object (serialized as a String where necessary).",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain MUST conform to StringHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain MUST conform to KeyValueFormat requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-004-C": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain MUST NOT be null when one or more properties uniquely define the granularity of the invoice line item.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-005-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain MUST contain the set of all properties that uniquely define the granularity of the invoice line item.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-006-O": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain SHOULD use the applicable FOCUS-defined Invoice Detail Grain properties listed below to represent the granularity of the invoice line item.",
+      "Keyword": "SHOULD",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-007-C": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 70,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain MUST include all custom Invoice Detail Grain properties that are applicable to the granularity of the invoice line item when there is no equivalent FOCUS-defined property.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-008-O": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 80,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain property keys SHOULD conform to PascalCase format.",
+      "Keyword": "SHOULD",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-009-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 90,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetailGrain property keys MUST begin with the string \"x\" unless it is a FOCUS-defined property.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-010-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 100,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS-defined InvoiceDetailGrain properties MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-011-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetailGrain-C-012-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-InvoiceDetailGrain-C-011-M",
+        "IND-InvoiceDetailGrain-C-012-M"
+      ]
+    }
+  },
+  "IND-InvoiceDetailGrain-C-011-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 110,
+    "ValidationCriteria": {
+      "MustSatisfy": "Property key MUST match the spelling and casing specified for the FOCUS-defined property.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetailGrain-C-012-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 120,
+    "ValidationCriteria": {
+      "MustSatisfy": "Property value MUST be of the type specified for that property.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

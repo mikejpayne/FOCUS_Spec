@@ -1,0 +1,226 @@
+{
+  "CCT-ContractCommitmentPaymentUpfrontPercentage-C-000-C": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Upfront Percentage",
+    "EntityId": "ContractCommitmentPaymentUpfrontPercentage",
+    "Reference": "ContractCommitmentPaymentUpfrontPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentUpfrontPercentage MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentUpfrontPercentage-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentUpfrontPercentage-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentUpfrontPercentage-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentUpfrontPercentage-C-004-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentUpfrontPercentage-C-005-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentUpfrontPercentage-C-006-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentUpfrontPercentage-C-007-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CCT-ContractCommitmentPaymentUpfrontPercentage-C-001-M",
+        "CCT-ContractCommitmentPaymentUpfrontPercentage-C-002-M",
+        "CCT-ContractCommitmentPaymentUpfrontPercentage-C-003-M",
+        "CCT-ContractCommitmentPaymentUpfrontPercentage-C-004-M",
+        "CCT-ContractCommitmentPaymentUpfrontPercentage-C-005-C",
+        "CCT-ContractCommitmentPaymentUpfrontPercentage-C-006-C",
+        "CCT-ContractCommitmentPaymentUpfrontPercentage-C-007-C"
+      ]
+    }
+  },
+  "CCT-ContractCommitmentPaymentUpfrontPercentage-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Upfront Percentage",
+    "EntityId": "ContractCommitmentPaymentUpfrontPercentage",
+    "Reference": "ContractCommitmentPaymentUpfrontPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentUpfrontPercentage MUST be of type Decimal.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentPaymentUpfrontPercentage-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Upfront Percentage",
+    "EntityId": "ContractCommitmentPaymentUpfrontPercentage",
+    "Reference": "ContractCommitmentPaymentUpfrontPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentUpfrontPercentage MUST conform to NumericFormat requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentPaymentUpfrontPercentage-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Upfront Percentage",
+    "EntityId": "ContractCommitmentPaymentUpfrontPercentage",
+    "Reference": "ContractCommitmentPaymentUpfrontPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentUpfrontPercentage MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentPaymentUpfrontPercentage-C-004-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Upfront Percentage",
+    "EntityId": "ContractCommitmentPaymentUpfrontPercentage",
+    "Reference": "ContractCommitmentPaymentUpfrontPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentUpfrontPercentage MUST be a value between 0.0 and 1.0, inclusive.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentPaymentUpfrontPercentage-C-005-C": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Upfront Percentage",
+    "EntityId": "ContractCommitmentPaymentUpfrontPercentage",
+    "Reference": "ContractCommitmentPaymentUpfrontPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentUpfrontPercentage MUST be 1.0 when ContractCommitmentPaymentModel is \"All Upfront\".",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentPaymentUpfrontPercentage-C-006-C": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Upfront Percentage",
+    "EntityId": "ContractCommitmentPaymentUpfrontPercentage",
+    "Reference": "ContractCommitmentPaymentUpfrontPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentUpfrontPercentage MUST be 0.0 when ContractCommitmentPaymentModel is \"No Upfront\".",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentPaymentUpfrontPercentage-C-007-C": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Upfront Percentage",
+    "EntityId": "ContractCommitmentPaymentUpfrontPercentage",
+    "Reference": "ContractCommitmentPaymentUpfrontPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 70,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentUpfrontPercentage MUST be greater than 0.0 and less than 1.0 when ContractCommitmentPaymentModel is \"Partial Upfront\".",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

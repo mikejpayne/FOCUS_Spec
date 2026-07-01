@@ -1,0 +1,139 @@
+{
+  "DataModel-M-000-M": {
+    "EntityType": "DataModel",
+    "EntityName": "Data Model",
+    "EntityId": "DataModel",
+    "Reference": "DataModel",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "DataModel MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "DataModel-M-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "DataModel-M-002-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "DataModel-M-003-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "DataModel-M-004-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "DataModel-M-001-M",
+        "DataModel-M-002-C",
+        "DataModel-M-003-C",
+        "DataModel-M-004-C"
+      ]
+    }
+  },
+  "DataModel-M-001-M": {
+    "EntityType": "DataModel",
+    "EntityName": "Cost and Usage",
+    "EntityId": "CostAndUsage",
+    "Reference": "CostAndUsage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "DataModel MUST include CostAndUsage.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "CostAndUsage"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "DataModel-M-002-C": {
+    "EntityType": "DataModel",
+    "EntityName": "Billing Period",
+    "EntityId": "BillingPeriod",
+    "Reference": "BillingPeriod",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "DataModel MUST include BillingPeriod when the operating model includes payable invoices.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "BillingPeriod"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "DataModel-M-003-C": {
+    "EntityType": "DataModel",
+    "EntityName": "Contract Commitment",
+    "EntityId": "ContractCommitment",
+    "Reference": "ContractCommitment",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "DataModel MUST include ContractCommitment when the operating model includes contract commitments.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "ContractCommitment"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "DataModel-M-004-C": {
+    "EntityType": "DataModel",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "DataModel MUST include InvoiceDetail when the operating model includes payable invoices.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceDetail"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

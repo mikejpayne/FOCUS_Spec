@@ -1,0 +1,170 @@
+{
+  "IND-PaymentCurrencyInvoiceDetailId-C-000-C": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency Invoice Detail ID",
+    "EntityId": "PaymentCurrencyInvoiceDetailId",
+    "Reference": "PaymentCurrencyInvoiceDetailId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrencyInvoiceDetailId MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrencyInvoiceDetailId-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrencyInvoiceDetailId-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrencyInvoiceDetailId-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrencyInvoiceDetailId-C-004-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrencyInvoiceDetailId-C-005-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-PaymentCurrencyInvoiceDetailId-C-001-M",
+        "IND-PaymentCurrencyInvoiceDetailId-C-002-M",
+        "IND-PaymentCurrencyInvoiceDetailId-C-003-M",
+        "IND-PaymentCurrencyInvoiceDetailId-C-004-M",
+        "IND-PaymentCurrencyInvoiceDetailId-C-005-C"
+      ]
+    }
+  },
+  "IND-PaymentCurrencyInvoiceDetailId-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency Invoice Detail ID",
+    "EntityId": "PaymentCurrencyInvoiceDetailId",
+    "Reference": "PaymentCurrencyInvoiceDetailId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrencyInvoiceDetailId MUST be of type String.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-PaymentCurrencyInvoiceDetailId-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency Invoice Detail ID",
+    "EntityId": "PaymentCurrencyInvoiceDetailId",
+    "Reference": "PaymentCurrencyInvoiceDetailId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrencyInvoiceDetailId MUST conform to StringHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-PaymentCurrencyInvoiceDetailId-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency Invoice Detail ID",
+    "EntityId": "PaymentCurrencyInvoiceDetailId",
+    "Reference": "PaymentCurrencyInvoiceDetailId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrencyInvoiceDetailId MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-PaymentCurrencyInvoiceDetailId-C-004-M": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency Invoice Detail ID",
+    "EntityId": "PaymentCurrencyInvoiceDetailId",
+    "Reference": "PaymentCurrencyInvoiceDetailId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrencyInvoiceDetailId MUST match the InvoiceDetailId of the record representing the PaymentCurrencyBilledCost aggregation for the current row.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-PaymentCurrencyInvoiceDetailId-C-005-C": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency Invoice Detail ID",
+    "EntityId": "PaymentCurrencyInvoiceDetailId",
+    "Reference": "PaymentCurrencyInvoiceDetailId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrencyInvoiceDetailId MUST match InvoiceDetailId of the current record when PaymentCurrencyBilledCost is non-zero.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

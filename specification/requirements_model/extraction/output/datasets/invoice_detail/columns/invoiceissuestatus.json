@@ -1,0 +1,198 @@
+{
+  "IND-InvoiceIssueStatus-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issue Status",
+    "EntityId": "InvoiceIssueStatus",
+    "Reference": "InvoiceIssueStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssueStatus MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceIssueStatus-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceIssueStatus-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceIssueStatus-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceIssueStatus-C-004-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceIssueStatus-C-005-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceIssueStatus-C-006-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-InvoiceIssueStatus-C-001-M",
+        "IND-InvoiceIssueStatus-C-002-M",
+        "IND-InvoiceIssueStatus-C-003-M",
+        "IND-InvoiceIssueStatus-C-004-M",
+        "IND-InvoiceIssueStatus-C-005-M",
+        "IND-InvoiceIssueStatus-C-006-C"
+      ]
+    }
+  },
+  "IND-InvoiceIssueStatus-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issue Status",
+    "EntityId": "InvoiceIssueStatus",
+    "Reference": "InvoiceIssueStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssueStatus MUST be of type String.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceIssueStatus-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issue Status",
+    "EntityId": "InvoiceIssueStatus",
+    "Reference": "InvoiceIssueStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssueStatus MUST conform to StringHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceIssueStatus-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issue Status",
+    "EntityId": "InvoiceIssueStatus",
+    "Reference": "InvoiceIssueStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssueStatus MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceIssueStatus-C-004-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issue Status",
+    "EntityId": "InvoiceIssueStatus",
+    "Reference": "InvoiceIssueStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssueStatus MUST be one of the allowed values.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceIssueStatus-C-005-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issue Status",
+    "EntityId": "InvoiceIssueStatus",
+    "Reference": "InvoiceIssueStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssueStatus MUST represent the current publication state of the invoice.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceIssueStatus-C-006-C": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issue Status",
+    "EntityId": "InvoiceIssueStatus",
+    "Reference": "InvoiceIssueStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssueStatus MUST NOT be \"Open\" following a previous status of \"Issued\", except when explicitly requested or approved by the customer.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

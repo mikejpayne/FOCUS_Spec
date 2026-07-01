@@ -1,0 +1,1163 @@
+{
+  "IND-InvoiceDetail-D-000-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-025-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-026-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-027-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-028-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-029-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-030-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-031-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-032-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-033-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-InvoiceDetail-D-001-M",
+        "IND-InvoiceDetail-D-025-M",
+        "IND-InvoiceDetail-D-026-M",
+        "IND-InvoiceDetail-D-027-M",
+        "IND-InvoiceDetail-D-028-M",
+        "IND-InvoiceDetail-D-029-M",
+        "IND-InvoiceDetail-D-030-M",
+        "IND-InvoiceDetail-D-031-M",
+        "IND-InvoiceDetail-D-032-M",
+        "IND-InvoiceDetail-D-033-M"
+      ]
+    }
+  },
+  "IND-InvoiceDetail-D-001-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail column presence MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-004-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-005-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-006-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-007-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-008-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-009-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-010-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-011-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-012-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-013-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-014-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-015-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-016-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-017-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-018-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-019-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-020-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-021-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-022-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-023-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-024-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-InvoiceDetail-D-002-M",
+        "IND-InvoiceDetail-D-003-M",
+        "IND-InvoiceDetail-D-004-M",
+        "IND-InvoiceDetail-D-005-M",
+        "IND-InvoiceDetail-D-006-M",
+        "IND-InvoiceDetail-D-007-M",
+        "IND-InvoiceDetail-D-008-M",
+        "IND-InvoiceDetail-D-009-M",
+        "IND-InvoiceDetail-D-010-M",
+        "IND-InvoiceDetail-D-011-M",
+        "IND-InvoiceDetail-D-012-M",
+        "IND-InvoiceDetail-D-013-M",
+        "IND-InvoiceDetail-D-014-M",
+        "IND-InvoiceDetail-D-015-M",
+        "IND-InvoiceDetail-D-016-M",
+        "IND-InvoiceDetail-D-017-C",
+        "IND-InvoiceDetail-D-018-C",
+        "IND-InvoiceDetail-D-019-C",
+        "IND-InvoiceDetail-D-020-M",
+        "IND-InvoiceDetail-D-021-M",
+        "IND-InvoiceDetail-D-022-C",
+        "IND-InvoiceDetail-D-023-M",
+        "IND-InvoiceDetail-D-024-C"
+      ]
+    }
+  },
+  "IND-InvoiceDetail-D-002-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Billed Cost",
+    "EntityId": "BilledCost",
+    "Reference": "BilledCost",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include BilledCost.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "BilledCost"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-003-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Billing Account Id",
+    "EntityId": "BillingAccountId",
+    "Reference": "BillingAccountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include BillingAccountId.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "BillingAccountId"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-004-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Billing Currency",
+    "EntityId": "BillingCurrency",
+    "Reference": "BillingCurrency",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include BillingCurrency.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "BillingCurrency"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-005-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Billing Period End",
+    "EntityId": "BillingPeriodEnd",
+    "Reference": "BillingPeriodEnd",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include BillingPeriodEnd.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "BillingPeriodEnd"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-006-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Billing Period Start",
+    "EntityId": "BillingPeriodStart",
+    "Reference": "BillingPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include BillingPeriodStart.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "BillingPeriodStart"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-007-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 70,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include ChargeCategory.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "ChargeCategory"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-008-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail Created",
+    "EntityId": "InvoiceDetailCreated",
+    "Reference": "InvoiceDetailCreated",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 80,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include InvoiceDetailCreated.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceDetailCreated"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-009-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail Description",
+    "EntityId": "InvoiceDetailDescription",
+    "Reference": "InvoiceDetailDescription",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 90,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include InvoiceDetailDescription.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceDetailDescription"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-010-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail Grain",
+    "EntityId": "InvoiceDetailGrain",
+    "Reference": "InvoiceDetailGrain",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 100,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include InvoiceDetailGrain.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceDetailGrain"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-011-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail Id",
+    "EntityId": "InvoiceDetailId",
+    "Reference": "InvoiceDetailId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 110,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include InvoiceDetailId.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceDetailId"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-012-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail Last Updated",
+    "EntityId": "InvoiceDetailLastUpdated",
+    "Reference": "InvoiceDetailLastUpdated",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 120,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include InvoiceDetailLastUpdated.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceDetailLastUpdated"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-013-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Id",
+    "EntityId": "InvoiceId",
+    "Reference": "InvoiceId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 130,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include InvoiceId.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceId"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-014-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Issue Date",
+    "EntityId": "InvoiceIssueDate",
+    "Reference": "InvoiceIssueDate",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 140,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include InvoiceIssueDate.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceIssueDate"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-015-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Issue Status",
+    "EntityId": "InvoiceIssueStatus",
+    "Reference": "InvoiceIssueStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 150,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include InvoiceIssueStatus.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceIssueStatus"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-016-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Issuer Name",
+    "EntityId": "InvoiceIssuerName",
+    "Reference": "InvoiceIssuerName",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 160,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include InvoiceIssuerName.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "InvoiceIssuerName"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-017-C": {
+    "EntityType": "Dataset",
+    "EntityName": "Payment Currency",
+    "EntityId": "PaymentCurrency",
+    "Reference": "PaymentCurrency",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 170,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include PaymentCurrency when the operating model includes billing and payment currency differences.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "PaymentCurrency"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-018-C": {
+    "EntityType": "Dataset",
+    "EntityName": "Payment Currency Billed Cost",
+    "EntityId": "PaymentCurrencyBilledCost",
+    "Reference": "PaymentCurrencyBilledCost",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 180,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include PaymentCurrencyBilledCost when the operating model includes billing and payment currency differences.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "PaymentCurrencyBilledCost"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-019-C": {
+    "EntityType": "Dataset",
+    "EntityName": "Payment Currency Invoice Detail Id",
+    "EntityId": "PaymentCurrencyInvoiceDetailId",
+    "Reference": "PaymentCurrencyInvoiceDetailId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 190,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include PaymentCurrencyInvoiceDetailId when the operating model includes aggregation level currency differences.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "PaymentCurrencyInvoiceDetailId"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-020-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Payment Due Date",
+    "EntityId": "PaymentDueDate",
+    "Reference": "PaymentDueDate",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 200,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include PaymentDueDate.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "PaymentDueDate"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-021-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Payment Terms",
+    "EntityId": "PaymentTerms",
+    "Reference": "PaymentTerms",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 210,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include PaymentTerms.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "PaymentTerms"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-022-C": {
+    "EntityType": "Dataset",
+    "EntityName": "Purchase Order Number",
+    "EntityId": "PurchaseOrderNumber",
+    "Reference": "PurchaseOrderNumber",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 220,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include PurchaseOrderNumber when the operating model includes purchase order numbers.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "PurchaseOrderNumber"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-023-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Reference Invoice Id",
+    "EntityId": "ReferenceInvoiceId",
+    "Reference": "ReferenceInvoiceId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Static",
+    "Order": 230,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include ReferenceInvoiceId.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "ColumnPresent",
+        "ColumnName": "ReferenceInvoiceId"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-024-C": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Presence",
+    "Type": "Dynamic",
+    "Order": 240,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST include custom columns to represent any monetary metric that appears on an invoice issued to a BillingAccountId when there is no equivalent FOCUS column.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-025-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "AttributeConformance",
+    "Type": "Static",
+    "Order": 250,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST conform to CorrectionHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AttributeConformance",
+        "AttributeName": "CorrectionHandling"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-026-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "AttributeConformance",
+    "Type": "Static",
+    "Order": 260,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST conform to DatasetCompleteness requirements.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AttributeConformance",
+        "AttributeName": "DatasetCompleteness"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-027-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "AttributeConformance",
+    "Type": "Static",
+    "Order": 270,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST conform to DatasetConfiguration requirements.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AttributeConformance",
+        "AttributeName": "DatasetConfiguration"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-028-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "AttributeConformance",
+    "Type": "Static",
+    "Order": 280,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST conform to DeliveryHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AttributeConformance",
+        "AttributeName": "DeliveryHandling"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-029-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Unclassified",
+    "Type": "Dynamic",
+    "Order": 290,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail MUST represent all invoice line items with a non-zero BilledCost on any invoice associated with a BillingAccountId.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-030-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "AttributeConformance",
+    "Type": "Static",
+    "Order": 300,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail FOCUS columns MUST conform to FocusColumnHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AttributeConformance",
+        "AttributeName": "FocusColumnHandling"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-031-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "AttributeConformance",
+    "Type": "Static",
+    "Order": 310,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail FOCUS columns MUST conform to NullHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AttributeConformance",
+        "AttributeName": "NullHandling"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-032-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "AttributeConformance",
+    "Type": "Static",
+    "Order": 320,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail custom columns MUST conform to CustomColumnHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AttributeConformance",
+        "AttributeName": "CustomColumnHandling"
+      },
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-033-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 330,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail documentation MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-034-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-035-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-036-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-InvoiceDetail-D-037-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-InvoiceDetail-D-034-M",
+        "IND-InvoiceDetail-D-035-M",
+        "IND-InvoiceDetail-D-036-M",
+        "IND-InvoiceDetail-D-037-M"
+      ]
+    }
+  },
+  "IND-InvoiceDetail-D-034-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 340,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail documentation MUST specify how InvoiceDetail records correspond to invoice line items.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-035-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 350,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail documentation MUST specify whether invoice line items with BilledCost of 0 are excluded from InvoiceDetail.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-036-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Unclassified",
+    "Type": "Dynamic",
+    "Order": 360,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail documentation MUST describe how columns in the CostAndUsage and InvoiceDetail dataset instances represent the invoice issuer's invoice reconciliation process.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-InvoiceDetail-D-037-M": {
+    "EntityType": "Dataset",
+    "EntityName": "Invoice Detail",
+    "EntityId": "InvoiceDetail",
+    "Reference": "InvoiceDetail",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 370,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceDetail documentation MUST be freely accessible to FOCUS consumers.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

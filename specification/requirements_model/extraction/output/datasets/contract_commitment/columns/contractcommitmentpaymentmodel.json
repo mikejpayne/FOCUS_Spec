@@ -1,0 +1,114 @@
+{
+  "CCT-ContractCommitmentPaymentModel-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Model",
+    "EntityId": "ContractCommitmentPaymentModel",
+    "Reference": "ContractCommitmentPaymentModel",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentModel MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentModel-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentModel-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentPaymentModel-C-003-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CCT-ContractCommitmentPaymentModel-C-001-M",
+        "CCT-ContractCommitmentPaymentModel-C-002-M",
+        "CCT-ContractCommitmentPaymentModel-C-003-M"
+      ]
+    }
+  },
+  "CCT-ContractCommitmentPaymentModel-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Model",
+    "EntityId": "ContractCommitmentPaymentModel",
+    "Reference": "ContractCommitmentPaymentModel",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentModel MUST be of type String.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentPaymentModel-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Model",
+    "EntityId": "ContractCommitmentPaymentModel",
+    "Reference": "ContractCommitmentPaymentModel",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentModel MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentPaymentModel-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Payment Model",
+    "EntityId": "ContractCommitmentPaymentModel",
+    "Reference": "ContractCommitmentPaymentModel",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentPaymentModel MUST be one of the allowed values.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

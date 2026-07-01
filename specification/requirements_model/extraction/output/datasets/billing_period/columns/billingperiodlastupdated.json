@@ -1,0 +1,170 @@
+{
+  "BIP-BillingPeriodLastUpdated-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Last Updated",
+    "EntityId": "BillingPeriodLastUpdated",
+    "Reference": "BillingPeriodLastUpdated",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodLastUpdated MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "BIP-BillingPeriodLastUpdated-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "BIP-BillingPeriodLastUpdated-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "BIP-BillingPeriodLastUpdated-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "BIP-BillingPeriodLastUpdated-C-004-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "BIP-BillingPeriodLastUpdated-C-005-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "BIP-BillingPeriodLastUpdated-C-001-M",
+        "BIP-BillingPeriodLastUpdated-C-002-M",
+        "BIP-BillingPeriodLastUpdated-C-003-M",
+        "BIP-BillingPeriodLastUpdated-C-004-C",
+        "BIP-BillingPeriodLastUpdated-C-005-M"
+      ]
+    }
+  },
+  "BIP-BillingPeriodLastUpdated-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Last Updated",
+    "EntityId": "BillingPeriodLastUpdated",
+    "Reference": "BillingPeriodLastUpdated",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodLastUpdated MUST be of type Date/Time.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "BIP-BillingPeriodLastUpdated-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Last Updated",
+    "EntityId": "BillingPeriodLastUpdated",
+    "Reference": "BillingPeriodLastUpdated",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodLastUpdated MUST conform to DateTimeFormat requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "BIP-BillingPeriodLastUpdated-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Last Updated",
+    "EntityId": "BillingPeriodLastUpdated",
+    "Reference": "BillingPeriodLastUpdated",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodLastUpdated MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "BIP-BillingPeriodLastUpdated-C-004-C": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Last Updated",
+    "EntityId": "BillingPeriodLastUpdated",
+    "Reference": "BillingPeriodLastUpdated",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodLastUpdated MUST represent the most recent moment in time when any column value of the Billing Period record was created or modified.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "BIP-BillingPeriodLastUpdated-C-005-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Last Updated",
+    "EntityId": "BillingPeriodLastUpdated",
+    "Reference": "BillingPeriodLastUpdated",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodLastUpdated MUST be greater than or equal to BillingPeriodCreated.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

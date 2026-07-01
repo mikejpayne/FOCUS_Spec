@@ -1,0 +1,320 @@
+{
+  "CAU-CommitmentDiscountId-C-000-C": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-006-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-CommitmentDiscountId-C-001-M",
+        "CAU-CommitmentDiscountId-C-002-M",
+        "CAU-CommitmentDiscountId-C-003-M",
+        "CAU-CommitmentDiscountId-C-006-C"
+      ]
+    }
+  },
+  "CAU-CommitmentDiscountId-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId MUST be of type String.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-CommitmentDiscountId-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId MUST conform to StringHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-CommitmentDiscountId-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId MUST adhere to the following nullability requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-004-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-005-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-CommitmentDiscountId-C-004-C",
+        "CAU-CommitmentDiscountId-C-005-C"
+      ]
+    }
+  },
+  "CAU-CommitmentDiscountId-C-004-C": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId MUST be null when a charge is not related to a commitment discount.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-CommitmentDiscountId-C-005-C": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId MUST NOT be null when a charge is related to a commitment discount.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-CommitmentDiscountId-C-006-C": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "When CommitmentDiscountId is not null, CommitmentDiscountId MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-007-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-008-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-009-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-CommitmentDiscountId-C-010-O"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-CommitmentDiscountId-C-007-M",
+        "CAU-CommitmentDiscountId-C-008-C",
+        "CAU-CommitmentDiscountId-C-009-C",
+        "CAU-CommitmentDiscountId-C-010-O"
+      ]
+    }
+  },
+  "CAU-CommitmentDiscountId-C-007-M": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 70,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId MUST be a unique identifier within the service provider.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-CommitmentDiscountId-C-008-C": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 80,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId MUST be equal to ResourceId when ChargeCategory is \"Purchase\" and the charge represents a purchase of that commitment discount.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-CommitmentDiscountId-C-009-C": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 90,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId MUST be equal to ResourceId when ChargeCategory is \"Usage\" and the charge represents an unused portion of that commitment discount.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-CommitmentDiscountId-C-010-O": {
+    "EntityType": "Column",
+    "EntityName": "Commitment Discount ID",
+    "EntityId": "CommitmentDiscountId",
+    "Reference": "CommitmentDiscountId",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 100,
+    "ValidationCriteria": {
+      "MustSatisfy": "CommitmentDiscountId SHOULD be a fully-qualified identifier.",
+      "Keyword": "SHOULD",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

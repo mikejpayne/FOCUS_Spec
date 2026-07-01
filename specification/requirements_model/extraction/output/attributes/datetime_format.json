@@ -1,0 +1,207 @@
+{
+  "ATT-DateTimeFormat-A-000-M": {
+    "EntityType": "Attribute",
+    "EntityName": "Date/Time Format",
+    "EntityId": "DateTimeFormat",
+    "Reference": "DateTimeFormat",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "Column conforming to DateTimeFormat attribute MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-DateTimeFormat-A-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-DateTimeFormat-A-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-DateTimeFormat-A-003-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "ATT-DateTimeFormat-A-001-M",
+        "ATT-DateTimeFormat-A-002-M",
+        "ATT-DateTimeFormat-A-003-C"
+      ]
+    }
+  },
+  "ATT-DateTimeFormat-A-001-M": {
+    "EntityType": "Attribute",
+    "EntityName": "Date/Time Format",
+    "EntityId": "DateTimeFormat",
+    "Reference": "DateTimeFormat",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST be expressed in UTC (Coordinated Universal Time) to avoid ambiguity and ensure consistency across different time zones.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-DateTimeFormat-A-002-M": {
+    "EntityType": "Attribute",
+    "EntityName": "Date/Time Format",
+    "EntityId": "DateTimeFormat",
+    "Reference": "DateTimeFormat",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST conform to the ISO 8601 standard, which provides a globally recognized format for representing dates and times (see ISO 8601-1:2019 governing document for details).",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-DateTimeFormat-A-003-C": {
+    "EntityType": "Attribute",
+    "EntityName": "Date/Time Format",
+    "EntityId": "DateTimeFormat",
+    "Reference": "DateTimeFormat",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "When FOCUS dataset column represents a specific moment in time, it MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-DateTimeFormat-A-004-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-DateTimeFormat-A-005-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-DateTimeFormat-A-006-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-DateTimeFormat-A-007-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "ATT-DateTimeFormat-A-004-M",
+        "ATT-DateTimeFormat-A-005-M",
+        "ATT-DateTimeFormat-A-006-M",
+        "ATT-DateTimeFormat-A-007-M"
+      ]
+    }
+  },
+  "ATT-DateTimeFormat-A-004-M": {
+    "EntityType": "Attribute",
+    "EntityName": "Date/Time Format",
+    "EntityId": "DateTimeFormat",
+    "Reference": "DateTimeFormat",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST use the extended ISO 8601 format with UTC offset (`YYYY-MM-DDTHH:mm:ssZ`).",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-DateTimeFormat-A-005-M": {
+    "EntityType": "Attribute",
+    "EntityName": "Date/Time Format",
+    "EntityId": "DateTimeFormat",
+    "Reference": "DateTimeFormat",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST include both the date and time components, separated with the letter `T`.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-DateTimeFormat-A-006-M": {
+    "EntityType": "Attribute",
+    "EntityName": "Date/Time Format",
+    "EntityId": "DateTimeFormat",
+    "Reference": "DateTimeFormat",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST use two-digit hours (`HH`), minutes (`mm`), and seconds (`ss`).",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-DateTimeFormat-A-007-M": {
+    "EntityType": "Attribute",
+    "EntityName": "Date/Time Format",
+    "EntityId": "DateTimeFormat",
+    "Reference": "DateTimeFormat",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 70,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST end with the ISO 8601 UTC designator `Z`.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "CCT-ContractCommitmentDiscountPercentage-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-006-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-007-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-010-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CCT-ContractCommitmentDiscountPercentage-C-001-M",
+        "CCT-ContractCommitmentDiscountPercentage-C-002-M",
+        "CCT-ContractCommitmentDiscountPercentage-C-003-M",
+        "CCT-ContractCommitmentDiscountPercentage-C-006-M",
+        "CCT-ContractCommitmentDiscountPercentage-C-007-M",
+        "CCT-ContractCommitmentDiscountPercentage-C-010-C"
+      ]
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage MUST be of type Decimal.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage MUST conform to NumericFormat requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage MUST adhere to the following nullability requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-004-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-005-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CCT-ContractCommitmentDiscountPercentage-C-004-C",
+        "CCT-ContractCommitmentDiscountPercentage-C-005-C"
+      ]
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-004-C": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage MUST NOT be null when ContractCommitmentBenefitCategory is \"Discount\".",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-005-C": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage MUST be null when ContractCommitmentBenefitCategory is \"Availability\".",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-006-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage MUST be a value between 0.0 and 1.0, inclusive.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-007-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 70,
+    "ValidationCriteria": {
+      "MustSatisfy": "For contracts with multiple tiers (e.g., 5% discount up to 1M, 10% above 1M), ContractCommitmentDiscountPercentage MUST adhere to the following additional requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-008-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentDiscountPercentage-C-009-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CCT-ContractCommitmentDiscountPercentage-C-008-M",
+        "CCT-ContractCommitmentDiscountPercentage-C-009-M"
+      ]
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-008-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 80,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage MUST reflect the discount percentage defined for the specific pricing tier represented by the Contract Commitment row.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-009-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 90,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage MUST correspond to only one pricing tier per Contract Commitment row.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentDiscountPercentage-C-010-C": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Discount Percentage",
+    "EntityId": "ContractCommitmentDiscountPercentage",
+    "Reference": "ContractCommitmentDiscountPercentage",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 100,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentDiscountPercentage SHOULD represent the net effective discount when multiple contractual layers are applicable (e.g., a negotiated discount on top of a standard commitment).",
+      "Keyword": "SHOULD",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

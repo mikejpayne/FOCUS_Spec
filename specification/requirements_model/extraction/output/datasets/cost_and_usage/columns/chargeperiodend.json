@@ -1,0 +1,142 @@
+{
+  "CAU-ChargePeriodEnd-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Charge Period End",
+    "EntityId": "ChargePeriodEnd",
+    "Reference": "ChargePeriodEnd",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargePeriodEnd MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-ChargePeriodEnd-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-ChargePeriodEnd-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-ChargePeriodEnd-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-ChargePeriodEnd-C-004-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-ChargePeriodEnd-C-001-M",
+        "CAU-ChargePeriodEnd-C-002-M",
+        "CAU-ChargePeriodEnd-C-003-M",
+        "CAU-ChargePeriodEnd-C-004-M"
+      ]
+    }
+  },
+  "CAU-ChargePeriodEnd-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Charge Period End",
+    "EntityId": "ChargePeriodEnd",
+    "Reference": "ChargePeriodEnd",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargePeriodEnd MUST be of type Date/Time.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-ChargePeriodEnd-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Charge Period End",
+    "EntityId": "ChargePeriodEnd",
+    "Reference": "ChargePeriodEnd",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargePeriodEnd MUST conform to DateTimeFormat requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-ChargePeriodEnd-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Charge Period End",
+    "EntityId": "ChargePeriodEnd",
+    "Reference": "ChargePeriodEnd",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargePeriodEnd MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-ChargePeriodEnd-C-004-M": {
+    "EntityType": "Column",
+    "EntityName": "Charge Period End",
+    "EntityId": "ChargePeriodEnd",
+    "Reference": "ChargePeriodEnd",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargePeriodEnd MUST be the exclusive end bound of the effective period of the charge.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

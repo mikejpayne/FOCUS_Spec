@@ -1,0 +1,170 @@
+{
+  "IND-BillingPeriodStart-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Start",
+    "EntityId": "BillingPeriodStart",
+    "Reference": "BillingPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodStart MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-BillingPeriodStart-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-BillingPeriodStart-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-BillingPeriodStart-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-BillingPeriodStart-C-004-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-BillingPeriodStart-C-005-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-BillingPeriodStart-C-001-M",
+        "IND-BillingPeriodStart-C-002-M",
+        "IND-BillingPeriodStart-C-003-M",
+        "IND-BillingPeriodStart-C-004-M",
+        "IND-BillingPeriodStart-C-005-M"
+      ]
+    }
+  },
+  "IND-BillingPeriodStart-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Start",
+    "EntityId": "BillingPeriodStart",
+    "Reference": "BillingPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodStart MUST be of type Date/Time.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-BillingPeriodStart-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Start",
+    "EntityId": "BillingPeriodStart",
+    "Reference": "BillingPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodStart MUST conform to DateTimeFormat requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-BillingPeriodStart-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Start",
+    "EntityId": "BillingPeriodStart",
+    "Reference": "BillingPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodStart MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-BillingPeriodStart-C-004-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Start",
+    "EntityId": "BillingPeriodStart",
+    "Reference": "BillingPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodStart MUST be the inclusive start bound of the billing period.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-BillingPeriodStart-C-005-M": {
+    "EntityType": "Column",
+    "EntityName": "Billing Period Start",
+    "EntityId": "BillingPeriodStart",
+    "Reference": "BillingPeriodStart",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "BillingPeriodStart for a given InvoiceId and InvoiceIssuerName MUST match CostAndUsage.BillingPeriodStart for the same CostAndUsage.InvoiceId and CostAndUsage.InvoiceIssuerName.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

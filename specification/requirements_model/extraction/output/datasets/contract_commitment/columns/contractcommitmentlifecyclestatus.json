@@ -1,0 +1,142 @@
+{
+  "CCT-ContractCommitmentLifecycleStatus-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Lifecycle Status",
+    "EntityId": "ContractCommitmentLifecycleStatus",
+    "Reference": "ContractCommitmentLifecycleStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentLifecycleStatus MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentLifecycleStatus-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentLifecycleStatus-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentLifecycleStatus-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CCT-ContractCommitmentLifecycleStatus-C-004-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CCT-ContractCommitmentLifecycleStatus-C-001-M",
+        "CCT-ContractCommitmentLifecycleStatus-C-002-M",
+        "CCT-ContractCommitmentLifecycleStatus-C-003-M",
+        "CCT-ContractCommitmentLifecycleStatus-C-004-C"
+      ]
+    }
+  },
+  "CCT-ContractCommitmentLifecycleStatus-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Lifecycle Status",
+    "EntityId": "ContractCommitmentLifecycleStatus",
+    "Reference": "ContractCommitmentLifecycleStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentLifecycleStatus MUST be of type String.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentLifecycleStatus-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Lifecycle Status",
+    "EntityId": "ContractCommitmentLifecycleStatus",
+    "Reference": "ContractCommitmentLifecycleStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentLifecycleStatus MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentLifecycleStatus-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Lifecycle Status",
+    "EntityId": "ContractCommitmentLifecycleStatus",
+    "Reference": "ContractCommitmentLifecycleStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "ContractCommitmentLifecycleStatus MUST be one of the allowed values.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CCT-ContractCommitmentLifecycleStatus-C-004-C": {
+    "EntityType": "Column",
+    "EntityName": "Contract Commitment Lifecycle Status",
+    "EntityId": "ContractCommitmentLifecycleStatus",
+    "Reference": "ContractCommitmentLifecycleStatus",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CCT",
+    "DatasetId": "ContractCommitment",
+    "DatasetName": "Contract Commitment",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "When a contract commitment record is modified in a way that requires a new ContractCommitmentID, ContractCommitmentLifecycleStatus for the previous record MUST be \"Superseded\".",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

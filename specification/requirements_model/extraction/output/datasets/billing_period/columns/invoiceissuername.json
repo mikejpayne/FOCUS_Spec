@@ -1,0 +1,142 @@
+{
+  "BIP-InvoiceIssuerName-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issuer Name",
+    "EntityId": "InvoiceIssuerName",
+    "Reference": "InvoiceIssuerName",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssuerName MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "BIP-InvoiceIssuerName-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "BIP-InvoiceIssuerName-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "BIP-InvoiceIssuerName-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "BIP-InvoiceIssuerName-C-004-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "BIP-InvoiceIssuerName-C-001-M",
+        "BIP-InvoiceIssuerName-C-002-M",
+        "BIP-InvoiceIssuerName-C-003-M",
+        "BIP-InvoiceIssuerName-C-004-M"
+      ]
+    }
+  },
+  "BIP-InvoiceIssuerName-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issuer Name",
+    "EntityId": "InvoiceIssuerName",
+    "Reference": "InvoiceIssuerName",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssuerName MUST be of type String.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "BIP-InvoiceIssuerName-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issuer Name",
+    "EntityId": "InvoiceIssuerName",
+    "Reference": "InvoiceIssuerName",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssuerName MUST conform to StringHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "BIP-InvoiceIssuerName-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issuer Name",
+    "EntityId": "InvoiceIssuerName",
+    "Reference": "InvoiceIssuerName",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssuerName MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "BIP-InvoiceIssuerName-C-004-M": {
+    "EntityType": "Column",
+    "EntityName": "Invoice Issuer Name",
+    "EntityId": "InvoiceIssuerName",
+    "Reference": "InvoiceIssuerName",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "BIP",
+    "DatasetId": "BillingPeriod",
+    "DatasetName": "Billing Period",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "InvoiceIssuerName MUST represent the entity that issues invoices.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

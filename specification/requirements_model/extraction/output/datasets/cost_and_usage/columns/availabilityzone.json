@@ -1,0 +1,114 @@
+{
+  "CAU-AvailabilityZone-C-000-O": {
+    "EntityType": "Column",
+    "EntityName": "Availability Zone",
+    "EntityId": "AvailabilityZone",
+    "Reference": "AvailabilityZone",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "AvailabilityZone MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-AvailabilityZone-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-AvailabilityZone-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-AvailabilityZone-C-003-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-AvailabilityZone-C-001-M",
+        "CAU-AvailabilityZone-C-002-M",
+        "CAU-AvailabilityZone-C-003-C"
+      ]
+    }
+  },
+  "CAU-AvailabilityZone-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Availability Zone",
+    "EntityId": "AvailabilityZone",
+    "Reference": "AvailabilityZone",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "AvailabilityZone MUST be of type String.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-AvailabilityZone-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Availability Zone",
+    "EntityId": "AvailabilityZone",
+    "Reference": "AvailabilityZone",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "AvailabilityZone MUST conform to StringHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-AvailabilityZone-C-003-C": {
+    "EntityType": "Column",
+    "EntityName": "Availability Zone",
+    "EntityId": "AvailabilityZone",
+    "Reference": "AvailabilityZone",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "AvailabilityZone MUST be null when a charge is not specific to an availability zone.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

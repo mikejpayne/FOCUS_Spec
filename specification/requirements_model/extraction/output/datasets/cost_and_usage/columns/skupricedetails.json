@@ -1,0 +1,750 @@
+{
+  "CAU-SkuPriceDetails-C-000-C": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-004-O"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-005-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-008-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-022-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-SkuPriceDetails-C-001-M",
+        "CAU-SkuPriceDetails-C-002-M",
+        "CAU-SkuPriceDetails-C-003-M",
+        "CAU-SkuPriceDetails-C-004-O",
+        "CAU-SkuPriceDetails-C-005-M",
+        "CAU-SkuPriceDetails-C-008-C",
+        "CAU-SkuPriceDetails-C-022-M"
+      ]
+    }
+  },
+  "CAU-SkuPriceDetails-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MUST be of type JSON Object (serialized as a String where necessary).",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MUST conform to StringHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MUST conform to KeyValueFormat requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-004-O": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails property keys SHOULD conform to PascalCase format.",
+      "Keyword": "SHOULD",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-005-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MUST adhere to the following nullability requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-006-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-007-O"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-SkuPriceDetails-C-006-C",
+        "CAU-SkuPriceDetails-C-007-O"
+      ]
+    }
+  },
+  "CAU-SkuPriceDetails-C-006-C": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MUST be null when SkuPriceId is null.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-007-O": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 70,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MAY be null when SkuPriceId is not null.",
+      "Keyword": "MAY",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-008-C": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 80,
+    "ValidationCriteria": {
+      "MustSatisfy": "When SkuPriceDetails is not null, SkuPriceDetails MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-009-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-010-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-011-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-012-O"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-013-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-014-O"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-015-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-019-O"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-020-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-021-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-SkuPriceDetails-C-009-M",
+        "CAU-SkuPriceDetails-C-010-C",
+        "CAU-SkuPriceDetails-C-011-M",
+        "CAU-SkuPriceDetails-C-012-O",
+        "CAU-SkuPriceDetails-C-013-C",
+        "CAU-SkuPriceDetails-C-014-O",
+        "CAU-SkuPriceDetails-C-015-M",
+        "CAU-SkuPriceDetails-C-019-O",
+        "CAU-SkuPriceDetails-C-020-M",
+        "CAU-SkuPriceDetails-C-021-C"
+      ]
+    }
+  },
+  "CAU-SkuPriceDetails-C-009-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 90,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MUST be associated with a given SkuPriceId.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-010-C": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 100,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MUST include the FOCUS-defined SKU Price property when an equivalent property is included as a custom property.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-011-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 110,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MUST NOT include properties that are not applicable to the corresponding SkuPriceId.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-012-O": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 120,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails SHOULD include all FOCUS-defined SKU Price properties listed below that are applicable to the corresponding SkuPriceId.",
+      "Keyword": "SHOULD",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-013-C": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 130,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails SHOULD include all custom SKU Price properties that are applicable to the corresponding SkuPriceId when there is no equivalent FOCUS-defined property.",
+      "Keyword": "SHOULD",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-014-O": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 140,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails MAY include properties that are already captured in other dedicated columns.",
+      "Keyword": "MAY",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-015-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 150,
+    "ValidationCriteria": {
+      "MustSatisfy": "SkuPriceDetails properties for a given SkuPriceId MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-016-O"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-017-O"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-018-O"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-SkuPriceDetails-C-016-O",
+        "CAU-SkuPriceDetails-C-017-O",
+        "CAU-SkuPriceDetails-C-018-O"
+      ]
+    }
+  },
+  "CAU-SkuPriceDetails-C-016-O": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 160,
+    "ValidationCriteria": {
+      "MustSatisfy": "Existing SkuPriceDetails properties SHOULD remain consistent over time.",
+      "Keyword": "SHOULD",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-017-O": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 170,
+    "ValidationCriteria": {
+      "MustSatisfy": "Existing SkuPriceDetails properties SHOULD NOT be removed.",
+      "Keyword": "SHOULD NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-018-O": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 180,
+    "ValidationCriteria": {
+      "MustSatisfy": "Additional SkuPriceDetails properties MAY be added over time.",
+      "Keyword": "MAY",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-019-O": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 190,
+    "ValidationCriteria": {
+      "MustSatisfy": "Property key SHOULD remain consistent across comparable SKUs having that property, and the values for this key SHOULD remain in a consistent format.",
+      "Keyword": "SHOULD",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-020-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 200,
+    "ValidationCriteria": {
+      "MustSatisfy": "Property key MUST begin with the string \"x\" unless it is a FOCUS-defined property.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-021-C": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 210,
+    "ValidationCriteria": {
+      "MustSatisfy": "Property value MUST represent the value for a single PricingUnit when the property holds a numeric value.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-022-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 220,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS-defined SKU Price properties MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-023-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-024-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "CAU-SkuPriceDetails-C-025-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "CAU-SkuPriceDetails-C-023-M",
+        "CAU-SkuPriceDetails-C-024-M",
+        "CAU-SkuPriceDetails-C-025-C"
+      ]
+    }
+  },
+  "CAU-SkuPriceDetails-C-023-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 230,
+    "ValidationCriteria": {
+      "MustSatisfy": "Property key MUST match the spelling and casing specified for the FOCUS-defined property.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-024-M": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 240,
+    "ValidationCriteria": {
+      "MustSatisfy": "Property value MUST be of the type specified for that property.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "CAU-SkuPriceDetails-C-025-C": {
+    "EntityType": "Column",
+    "EntityName": "SKU Price Details",
+    "EntityId": "SkuPriceDetails",
+    "Reference": "SkuPriceDetails",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "CAU",
+    "DatasetId": "CostAndUsage",
+    "DatasetName": "Cost and Usage",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 250,
+    "ValidationCriteria": {
+      "MustSatisfy": "Property value MUST represent the value for a single PricingUnit, denominated in the unit of measure specified for that property when the property holds a numeric value.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

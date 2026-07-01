@@ -1,0 +1,170 @@
+{
+  "IND-PaymentCurrency-C-000-C": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency",
+    "EntityId": "PaymentCurrency",
+    "Reference": "PaymentCurrency",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrency MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrency-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrency-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrency-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrency-C-004-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-PaymentCurrency-C-005-M"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-PaymentCurrency-C-001-M",
+        "IND-PaymentCurrency-C-002-M",
+        "IND-PaymentCurrency-C-003-M",
+        "IND-PaymentCurrency-C-004-M",
+        "IND-PaymentCurrency-C-005-M"
+      ]
+    }
+  },
+  "IND-PaymentCurrency-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency",
+    "EntityId": "PaymentCurrency",
+    "Reference": "PaymentCurrency",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrency MUST be of type String.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-PaymentCurrency-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency",
+    "EntityId": "PaymentCurrency",
+    "Reference": "PaymentCurrency",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Format",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrency MUST conform to StringHandling requirements.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-PaymentCurrency-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency",
+    "EntityId": "PaymentCurrency",
+    "Reference": "PaymentCurrency",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrency MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-PaymentCurrency-C-004-M": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency",
+    "EntityId": "PaymentCurrency",
+    "Reference": "PaymentCurrency",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrency MUST represent the currency in which the invoice payment was made or expected to be made.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-PaymentCurrency-C-005-M": {
+    "EntityType": "Column",
+    "EntityName": "Payment Currency",
+    "EntityId": "PaymentCurrency",
+    "Reference": "PaymentCurrency",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "PaymentCurrency MUST be expressed in national currency (e.g., USD, EUR).",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

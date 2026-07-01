@@ -1,0 +1,312 @@
+{
+  "ATT-StringHandling-A-000-M": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "Column conforming to StringHandling attribute MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-004-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-005-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-009-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "ATT-StringHandling-A-001-M",
+        "ATT-StringHandling-A-002-M",
+        "ATT-StringHandling-A-003-M",
+        "ATT-StringHandling-A-004-C",
+        "ATT-StringHandling-A-005-C",
+        "ATT-StringHandling-A-009-C"
+      ]
+    }
+  },
+  "ATT-StringHandling-A-001-M": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST preserve the original casing of string values.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-StringHandling-A-002-M": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST preserve the original spacing of string values.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-StringHandling-A-003-M": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST preserve other relevant consistency factors as specified by the data generator or end-user.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-StringHandling-A-004-C": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST remain consistent across all billing periods when the FOCUS dataset column contains immutable string values (e.g., resource identifier, region identifier).",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-StringHandling-A-005-C": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "When FOCUS dataset column contains mutable string values (e.g., resource name, region name), it MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-006-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-007-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-008-O"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "ATT-StringHandling-A-006-M",
+        "ATT-StringHandling-A-007-C",
+        "ATT-StringHandling-A-008-O"
+      ]
+    }
+  },
+  "ATT-StringHandling-A-006-M": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST reflect the altered value in all records pertaining to a period after the change.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-StringHandling-A-007-C": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 70,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MUST reflect the string value as it existed prior to the change in all records pertaining to a period prior to the change when the record does not represent a correction to a previously closed billing period.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-StringHandling-A-008-O": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 80,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column MAY reflect the altered value in records pertaining to a period prior to the change when the record represents a correction to a previously closed billing period.",
+      "Keyword": "MAY",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-StringHandling-A-009-C": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 90,
+    "ValidationCriteria": {
+      "MustSatisfy": "When FOCUS dataset column contains not-nullable string values, it MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-010-O"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "ATT-StringHandling-A-011-O"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "ATT-StringHandling-A-010-O",
+        "ATT-StringHandling-A-011-O"
+      ]
+    }
+  },
+  "ATT-StringHandling-A-010-O": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 100,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column SHOULD NOT contain empty strings.",
+      "Keyword": "SHOULD NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "ATT-StringHandling-A-011-O": {
+    "EntityType": "Attribute",
+    "EntityName": "String Handling",
+    "EntityId": "StringHandling",
+    "Reference": "StringHandling",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 110,
+    "ValidationCriteria": {
+      "MustSatisfy": "FOCUS dataset column SHOULD NOT contain strings consisting solely of whitespace characters.",
+      "Keyword": "SHOULD NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}

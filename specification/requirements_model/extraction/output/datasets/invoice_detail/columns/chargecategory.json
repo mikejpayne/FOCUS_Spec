@@ -1,0 +1,348 @@
+{
+  "IND-ChargeCategory-C-000-M": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Composite",
+    "Type": "Static",
+    "Order": 0,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-001-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-002-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-003-M"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-004-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-010-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-ChargeCategory-C-001-M",
+        "IND-ChargeCategory-C-002-M",
+        "IND-ChargeCategory-C-003-M",
+        "IND-ChargeCategory-C-004-C",
+        "IND-ChargeCategory-C-010-C"
+      ]
+    }
+  },
+  "IND-ChargeCategory-C-001-M": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Type",
+    "Type": "Dynamic",
+    "Order": 10,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MUST be of type String.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-ChargeCategory-C-002-M": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Nullability",
+    "Type": "Dynamic",
+    "Order": 20,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MUST NOT be null.",
+      "Keyword": "MUST NOT",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-ChargeCategory-C-003-M": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 30,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MUST be one of the allowed values.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-ChargeCategory-C-004-C": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 40,
+    "ValidationCriteria": {
+      "MustSatisfy": "When the charge does not aggregate multiple classifications, ChargeCategory MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-005-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-006-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-007-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-008-C"
+          },
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-009-C"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-ChargeCategory-C-005-C",
+        "IND-ChargeCategory-C-006-C",
+        "IND-ChargeCategory-C-007-C",
+        "IND-ChargeCategory-C-008-C",
+        "IND-ChargeCategory-C-009-C"
+      ]
+    }
+  },
+  "IND-ChargeCategory-C-005-C": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 50,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MUST be \"Usage\" when the charge represents consumption of a service or resource.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-ChargeCategory-C-006-C": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 60,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MUST be \"Purchase\" when the charge represents acquisition of a service, resource, or commitment.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-ChargeCategory-C-007-C": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 70,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MUST be \"Tax\" when the charge represents taxes levied by the relevant authorities.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-ChargeCategory-C-008-C": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 80,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MUST be \"Credit\" when the charge represents a financial incentive or allowance unrelated to other charges.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-ChargeCategory-C-009-C": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 90,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MUST be \"Adjustment\" when the charge represents a billing modification that does not fall into other ChargeCategories.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  },
+  "IND-ChargeCategory-C-010-C": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Static",
+    "Order": 100,
+    "ValidationCriteria": {
+      "MustSatisfy": "When the charge aggregates multiple classifications, ChargeCategory MUST adhere to the following requirements:",
+      "Keyword": "MUST",
+      "Requirement": {
+        "CheckFunction": "AND",
+        "Items": [
+          {
+            "CheckFunction": "CheckModelRule",
+            "ModelRuleId": "IND-ChargeCategory-C-011-O"
+          }
+        ]
+      },
+      "Condition": {},
+      "Dependencies": [
+        "IND-ChargeCategory-C-011-O"
+      ]
+    }
+  },
+  "IND-ChargeCategory-C-011-O": {
+    "EntityType": "Column",
+    "EntityName": "Charge Category",
+    "EntityId": "ChargeCategory",
+    "Reference": "ChargeCategory",
+    "Notes": "",
+    "ModelVersionIntroduced": "1.3",
+    "Status": "Active",
+    "ApplicabilityCriteria": [],
+    "DatasetType": "IND",
+    "DatasetId": "InvoiceDetail",
+    "DatasetName": "Invoice Detail",
+    "Function": "Validation",
+    "Type": "Dynamic",
+    "Order": 110,
+    "ValidationCriteria": {
+      "MustSatisfy": "ChargeCategory MAY be \"Usage\" when the record aggregates charges across multiple allowed values other than \"Tax\" (e.g., aggregation of \"Usage\" and \"Credit\" is allowed, but not \"Usage\" and \"Tax\").",
+      "Keyword": "MAY",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+  }
+}
