@@ -152,8 +152,11 @@ def generate_rules(target, sections, contract, model_version, logger):
         else:
             function = classify_verb(bullet.text, verb_map)
             if function is None:
-                skipped.append(bullet.text)
-                return None
+                if extract_bcp14_keyword(bullet.text):
+                    function = "Validation"
+                else:
+                    skipped.append(bullet.text)
+                    return None
 
         seq += 1
         keyword = extract_bcp14_keyword(bullet.text)
@@ -161,14 +164,17 @@ def generate_rules(target, sections, contract, model_version, logger):
 
         rule_id = generate_rule_id(prefix, entity_id, target.artifact_type, seq, fl)
 
+        req_check = extract_requirement_check(bullet.text, function) or {}
+
         rule = {
             **shared,
             "Function": function,
-            "Type": "Static",
+            "Type": "Static" if req_check else "Dynamic",
+            "Order": seq * 10,
             "ValidationCriteria": {
                 "MustSatisfy": bullet.text,
                 "Keyword": keyword or "MUST",
-                "Requirement": extract_requirement_check(bullet.text, function) or {},
+                "Requirement": req_check,
                 "Condition": {},
                 "Dependencies": [],
             },
@@ -198,6 +204,7 @@ def generate_rules(target, sections, contract, model_version, logger):
                     ],
                 }
                 rule["ValidationCriteria"]["Dependencies"] = list(sub_child_ids)
+                rule["Type"] = "Static"
 
         rules[rule_id] = rule
         return rule_id
@@ -218,6 +225,7 @@ def generate_rules(target, sections, contract, model_version, logger):
         **shared,
         "Function": composite_function,
         "Type": "Static",
+        "Order": 0,
         "ValidationCriteria": {
             "MustSatisfy": anchor_phrase,
             "Keyword": extract_bcp14_keyword(anchor_phrase) or "MUST",

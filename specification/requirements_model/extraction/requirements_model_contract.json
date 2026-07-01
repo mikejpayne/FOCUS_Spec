@@ -56,6 +56,7 @@
     "Location": "specification/attributes/",
     "EntityType": "Attribute",
     "ArtifactType": "A",
+    "IdPrefix": "ATT",
     "Headings": {
       "Requirements": "Requirements",
       "Id": "Attribute ID",

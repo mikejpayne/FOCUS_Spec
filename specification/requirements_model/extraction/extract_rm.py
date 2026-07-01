@@ -111,6 +111,9 @@ def main():
         print(f"Skipped {skipped_files} files (no rules extracted)")
 
     # Report skipped bullets
+    log_path = Path(args.output) / "skipped_bullets.log"
+    if log_path.exists():
+        log_path.unlink()
     if all_skipped:
         total_skipped = sum(len(v) for v in all_skipped.values())
         print(f"\n{total_skipped} bullets skipped (no known verb):")
@@ -118,7 +121,6 @@ def main():
             for text in bullets:
                 print(f"  {filename}: {text[:120]}")
 
-        log_path = Path(args.output) / "skipped_bullets.log"
         with open(log_path, "w") as f:
             for filename, bullets in all_skipped.items():
                 for text in bullets:

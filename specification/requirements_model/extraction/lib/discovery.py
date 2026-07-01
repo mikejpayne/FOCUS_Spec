@@ -78,6 +78,7 @@ def discover_files(contract, spec_root, logger):
                     filepath=attr_file,
                     entity_type=attr_config["EntityType"],
                     artifact_type=attr_config["ArtifactType"],
+                    dataset_prefix=attr_config.get("IdPrefix", ""),
                     headings=attr_config["Headings"],
                 ))
             logger.info(f"Discovered {len([f for f in attr_base.glob('*.md') if f.name not in skip])} attributes")
